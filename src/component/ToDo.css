@@ -1,0 +1,93 @@
+.ToDoContainer {
+  width: 800px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.container-title {
+  background: darkslategray;
+  color: white;
+  height: 5rem;
+  font-size: 30px;
+  display: flex;
+  align-items: center; /*높이 기준 글자 중앙정렬*/
+  justify-content: center; /*너비 기준 글자 중앙정렬*/
+}
+
+.container-content {
+  background: white;
+}
+
+/* ToDo Input */
+
+.ToDoInput {
+  background: darkslategray;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ToDoInput input {
+  margin-left: 20px;
+  height: 40px;
+  color: black;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 15px;
+  flex: 1; /*버튼 제외한 모든 공간 차지*/
+}
+
+.ToDoInput input::placeholder {
+  color: black;
+}
+
+.ToDoInput button {
+  height: 40px;
+  background: darkslategray;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 40px; /*icon 크기 조정 가능*/
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ToDo Item */
+.ToDoItem {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+.ToDoItem .check-box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.ToDoItem .item-text {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.ToDoItem .remove {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*ToDo List*/
+.ToDoList {
+  height: 100vh;
+  overflow-y: auto;
+}
